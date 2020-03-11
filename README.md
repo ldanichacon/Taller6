@@ -8,7 +8,7 @@ _Desarrollo Taller 6 clase Pruebas Automaticas_
 * [mysql](https://www.mysql.com/) 
 * [EJS](https://ejs.co/)
 * [cypress](https://www.cypress.io/)
-* [resemble.js] (https://rsmbl.github.io/Resemble.js/)
+* [resemble.js](https://rsmbl.github.io/Resemble.js/)
 
 ## instalación
 
