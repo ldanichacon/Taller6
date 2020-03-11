@@ -1,0 +1,30 @@
+<%- include('./header'); -%>
+  <div class="container-fluid text-center">
+  <h1 class="display-3">Automatización de VRT</h1>
+    <a href="/generar" class="btn btn-primary btn-block">Generar Reporte</a>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Fecha Reporte</th>
+          <th scope="col">Imagen Base</th>
+          <th scope="col">Imagen Modificada</th>
+          <th scope="col">Diferencias</th>
+          <th scope="col">Información Importante</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%reportes.forEach((reporte)=>{ %>
+        <tr>
+          <td><%= reporte.fecha_reporte.getFullYear()%>-<%if(reporte.fecha_reporte.getMonth()+1<10){%>0<%}%><%=reporte.fecha_reporte.getMonth()+1%>-<%if(reporte.fecha_reporte.getDate()<10){%>0<%}%><%=reporte.fecha_reporte.getDate()%></td>
+          <td><img src=<%= reporte.folder%>1st.png class="img-fluid" alt="Responsive image"></td>
+          <td><img src=<%= reporte.folder%>2nd.png class="img-fluid" alt="Responsive image"></td>
+          <td><img src=<%= reporte.folder%>diff.png class="img-fluid" alt="Responsive image"></td>
+          <td><%= reporte.info_importante %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+
+  </div>
+
+<%- include('./footer'); -%>

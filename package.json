@@ -1,0 +1,23 @@
+{
+  "name": "resemble",
+  "version": "1.0.0",
+  "description": "Herramienta de automatizacion",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src"
+  },
+  "author": "Daniela Chacon",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^4.1.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.18.1",
+    "mz": "^2.7.0",
+    "resemblejs": "^3.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
